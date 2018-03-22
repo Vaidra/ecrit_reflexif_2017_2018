@@ -1,8 +1,12 @@
 \documentclass[a4paper, 12pt]{article}
 
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
 \usepackage[utf8]{inputenc}  
 \usepackage[francais]{babel}
-\usepackage[T1]{fontenc}   
+\usepackage[T1]{fontenc}  
+%\renewcommand{\baselinestretch}{1.5} 
 
 \title{Écrit réflexif : L'évaluation par compétences}
 \author{CLIN Exavérine}
@@ -10,31 +14,56 @@
 
 \begin{document}
 \maketitle
-\newpage
 
+\newpage
+\part*{Remerciements}
+\input{parties/remerciements}
+\addcontentsline{toc}{part}{Remerciements} 
+
+\newpage
+\part*{Résumé}
+\input{parties/resume}
+\addcontentsline{toc}{part}{Résumé} 
+
+%\addcontentsline{toc}{part}{Le Monde} 
+%\addcontentsline{toc}{chapter}{L'Eurasie} 
+%\addcontentsline{toc}{section}{L'Europe} 
+%\addcontentsline{toc}{subsection}{La France} 
+%\addcontentsline{toc}{subsubsection}{L'Aquitaine} 
+%\addcontentsline{toc}{paragraph}{La Gironde} 
+%\addcontentsline{toc}{subparagraph}{Bordeaux} 
+
+\newpage
 \tableofcontents
-\newpage
 
-\part*{Problématique}
+\newpage
+\part{Introduction}
 \input{parties/1-problematique}
 
 \newpage
-\part*{Définitions de l'évaluation}
-\input{parties/2-situation}
+\part{Définitions de l'évaluation}
+\input{parties/2-definitions}
+\setcounter{section}{0}
 
 \newpage
-\part*{Problématique}
-\input{parties/3-outils}
+\part{Mise en place d'une évaluation}
+\input{parties/3-situation}
+\setcounter{section}{0}
+
+%\newpage
+%\part{??}
+%\input{parties/4-eleves}
 
 \newpage
-\part*{Problématique}
-\input{parties/4-eleves}
-
-\newpage
-\part*{Conclusion}
+\part{Conclusion}
 \input{parties/5-conclusion}
 
 \newpage
+\part*{Bibliographie}
 \bibliography{evaluation_competence}
+
+\newpage
+\part*{Annexes}
+% Fiche séquence evaluation
 
 \end{document}
